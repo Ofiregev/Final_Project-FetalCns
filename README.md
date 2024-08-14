@@ -30,14 +30,6 @@ To get started with the project, simply open the Colab notebook using the link b
 1. **Open the Notebook**: Click on the link above to open the Colab notebook.
 2. **Execute Cells**: Run the cells in the notebook sequentially to preprocess the data, train the models, and evaluate the results.
 
-## Directory Structure
-
-Since the project is contained within a single Colab notebook, no additional directory structure is necessary. However, if you expand the project locally or in a different environment, you may consider organizing the following folders:
-
-- **`data/`**: (For local use) Store any datasets here.
-- **`models/`**: (For local use) Save model checkpoints or architecture files.
-- **`results/`**: (For local use) Save output metrics and visualizations.
-
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or encounter any issues, feel free to submit a pull request or open an issue on the [GitHub repository](https://github.com/Ofiregev/Final_Project-FetalCns).
