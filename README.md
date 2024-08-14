@@ -4,6 +4,9 @@
 
 This project aims to predict fetal head circumference (HC) from ultrasound images using Convolutional Neural Networks (CNNs) and various regression methods. Accurate measurement of HC is crucial in prenatal care for monitoring fetal growth and detecting potential health issues. The traditional manual measurement process is prone to variability and error, which this project seeks to address through automation with machine learning.
 
+## Data Source
+
+The data used for this project comes from the [H18 Challenge](https://h18.grand-challenge.org/), a publicly available dataset that provides fetal ultrasound images annotated for head circumference measurement. This dataset was used to train and evaluate the models developed in this project.
 ## Features
 
 - **Data Preprocessing**: Includes data augmentation techniques like horizontal flips, rotations, and normalization.
