@@ -1,79 +1,43 @@
-
 # Prediction of Fetal Head Circumference Using Regression Methods in Machine Learning
 
-## Project Overview
+## Overview
 
-This project aims to predict fetal head circumference using various regression methods in machine learning. The prediction model is built using PyTorch and leverages deep learning techniques to analyze and predict head circumference based on medical imaging data.
+This project aims to predict fetal head circumference (HC) from ultrasound images using Convolutional Neural Networks (CNNs) and various regression methods. Accurate measurement of HC is crucial in prenatal care for monitoring fetal growth and detecting potential health issues. The traditional manual measurement process is prone to variability and error, which this project seeks to address through automation with machine learning.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+## Features
 
-## Dataset
+- **Data Preprocessing**: Includes data augmentation techniques like horizontal flips, rotations, and normalization.
+- **Model Development**: Implementation of CNN architectures, focusing on ResNet variants.
+- **Evaluation**: Utilizes metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and percentage of images with prediction errors within 5% and 10% of the ground truth.
 
-The dataset used for this project consists of medical images and corresponding measurements of fetal head circumference. The images are loaded using a custom dataset class defined in the project, which processes the data and prepares it for training.
+## Google Colab Notebook
 
-## Model Architecture
+The entire workflow, including data preprocessing, model training, and evaluation, is encapsulated in a single Google Colab notebook.
 
-The project employs a Convolutional Neural Network (CNN) to process the medical images and predict the fetal head circumference. The network architecture includes the following components:
+### Accessing the Colab Notebook
 
-- **Convolutional Layers**: Extract features from the input images.
-- **Fully Connected Layers**: Combine extracted features to predict the head circumference.
-- **Loss Function**: Mean Squared Error (MSE) is used to calculate the prediction error.
-- **Optimization**: Adam optimizer is used to minimize the loss function.
+To get started with the project, simply open the Colab notebook using the link below:
 
-## Installation
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Ofiregev/Final_Project-FetalCns/blob/main/Prediction_Fetal_HC_Colab_Notebook.ipynb)
 
-To set up the project locally, follow these steps:
+### Running the Notebook
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/YourUsername/YourRepository.git
-    ```
+1. **Open the Notebook**: Click on the link above to open the Colab notebook.
+2. **Execute Cells**: Run the cells in the notebook sequentially to preprocess the data, train the models, and evaluate the results.
 
-2. Navigate to the project directory:
-    ```bash
-    cd YourRepository
-    ```
+## Directory Structure
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Since the project is contained within a single Colab notebook, no additional directory structure is necessary. However, if you expand the project locally or in a different environment, you may consider organizing the following folders:
 
-4. (Optional) If using Google Colab, mount your Google Drive:
-    ```python
-    from google.colab import drive
-    drive.mount('/content/drive')
-    ```
-
-## Usage
-
-1. **Data Preparation**: Place your dataset in the appropriate directory and update the dataset path in the script.
-
-2. **Training the Model**: Run the script to train the model on your dataset. The training process includes data loading, model training, and evaluation.
-    ```python
-    python fetal_cns_final_reg_v8.py
-    ```
-
-3. **Evaluation**: The model's performance is evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² Score.
-
-4. **Prediction**: After training, you can use the model to predict fetal head circumference on new data.
-
-## Results
-
-The model's performance is evaluated based on several regression metrics. The results are logged and can be visualized using Matplotlib.
+- **`data/`**: (For local use) Store any datasets here.
+- **`models/`**: (For local use) Save model checkpoints or architecture files.
+- **`results/`**: (For local use) Save output metrics and visualizations.
 
 ## Contributing
 
-Contributions are welcome! If you would like to improve this project, feel free to fork the repository and submit a pull request.
+Contributions are welcome! If you have suggestions for improvements or encounter any issues, feel free to submit a pull request or open an issue on the [GitHub repository](https://github.com/Ofiregev/Final_Project-FetalCns).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
