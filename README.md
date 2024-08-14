@@ -6,7 +6,7 @@ This project aims to predict fetal head circumference (HC) from ultrasound image
 
 ## Data Source
 
-The data used for this project comes from the [H18 Challenge](https://h18.grand-challenge.org/), a publicly available dataset that provides fetal ultrasound images annotated for head circumference measurement. This dataset was used to train and evaluate the models developed in this project.
+The data used for this project comes from the [H18 Challenge](https://zenodo.org/records/1327317), a publicly available dataset that provides fetal ultrasound images annotated for head circumference measurement. This dataset was used to train and evaluate the models developed in this project.
 ## Features
 
 - **Data Preprocessing**: Includes data augmentation techniques like horizontal flips, rotations, and normalization.
