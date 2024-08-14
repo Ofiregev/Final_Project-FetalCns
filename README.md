@@ -18,7 +18,9 @@ The entire workflow, including data preprocessing, model training, and evaluatio
 
 To get started with the project, simply open the Colab notebook using the link below:
 
-[![Open in Colab]([https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Ofiregev/Final_Project-FetalCns/blob/main/Prediction_Fetal_HC_Colab_Notebook.ipynb](https://colab.research.google.com/github/Ofiregev/Final_Project-FetalCns/blob/main/Fetal_Cns_Final_reg_v8.ipynb))
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Ofiregev/Final_Project-FetalCns/blob/main/Fetal_Cns_Final.ipynb)
+
 
 ### Running the Notebook
 
